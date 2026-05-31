@@ -1,24 +1,3 @@
-environment {
-  GDK_BACKEND "wayland"
-  QT_QPA_PLATFORM "wayland;xcb"
-  SDL_VIDEODRIVER "wayland"
-  CLUTTER_BACKEND "wayland"
-  XDG_MENU_PREFIX "arch-"
-  XDG_CURRENT_DESKTOP "niri"
-  XDG_SESSION_TYPE "wayland"
-  XDG_SESSION_DESKTOP "niri"
-
-
-  QT_AUTO_SCREEN_SCALE_FACTOR "1" 
-  QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
-  QT_QPA_PLATFORMTHEME "qt6ct"
-
-
-  MOZ_ENABLE_WAYLAND "1"
-  GDK_SCALE "1"
-  ELECTRON_OZONE_PLATFORM_HINT "auto"
-}
-
 input {
     keyboard {
         xkb {
@@ -100,7 +79,7 @@ output "eDP-1" {
 layout {
     // Set gaps around windows in logical pixels.
     background-color "transparent"
-    gaps 6
+    gaps 16
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
     //   or right edge of the screen.
@@ -128,7 +107,7 @@ layout {
 
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        // off
+        off
 
         // How many logical pixels the ring extends out from the windows.
         width 3
@@ -172,7 +151,7 @@ layout {
     // You can enable drop shadows for windows.
     shadow {
         // Uncomment the next line to enable shadows.
-        // on
+        on
 
         // draws any.
         //

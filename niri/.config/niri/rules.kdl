@@ -9,7 +9,7 @@ window-rule {
 
 window-rule {
     match app-id=".*"
-    opacity 0.70
+    opacity 0.75
     draw-border-with-background false
     background-effect {
         blur true
@@ -47,6 +47,14 @@ window-rule {
   match app-id="org.gnome.Evince"
   open-maximized true
 }
+
+window-rule {
+    match app-id="^mpv$"
+    open-floating false
+    default-column-width {}
+    default-window-height {}
+}
+
 
 window-rule {
     match app-id="^org.qutebrowser.qutebrowser$"
